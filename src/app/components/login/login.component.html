@@ -1,0 +1,23 @@
+<div class=login-page>
+
+<header class="login_header">
+    <div class="left-container">
+        <img src="assets/greapp_logo.jpeg" alt="logo">
+    </div>
+    <div class="right-container">
+        <mat-card class="right-container-login-card">
+            <mat-card-content class="right-container-login-card-content">
+                <form #form="ngForm" class="login-form" (ngSubmit)="login(form)">
+                    <input type="text" name="email" ngModel placeholder="Email address" required style="padding: 18px;">
+                    <input type="password" name="password" ngModel placeholder="Password" required style="padding: 18px;">
+                    <button type="submit" class="login-button" [disabled]="form.invalid || form.pending">Sign In</button>
+                </form>
+                <a href="#">Forgot account?</a>
+                <button class="account-create" (click)="signUp">Sign Up</button>
+                <p class="tag"><i>"There is no wrong time to start the right thing."<br/>Take a step towards success.</i></p> 
+            </mat-card-content>
+        </mat-card>   
+    </div>
+</header>
+
+</div>

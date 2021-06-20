@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "gre-master-vocab": {
+      "hosting": {
+        "master-gre-vocab": [
+          "gre-master-vocab"
+        ]
+      }
+    }
+  }
+}
